@@ -4,14 +4,25 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
 
 
 public class SignUpActivity extends Activity {
+
+    protected EditText mUsername;
+    protected EditText mPassword;
+    protected EditText mEmail;
+    protected Button mSignUpButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        mUsername = (EditText)findViewById(R.id.userNameField2);
+        mPassword = (EditText)findViewById(R.id.passwordField2);
+        mEmail = (EditText)findViewById(R.id.emailField);
     }
 
 
