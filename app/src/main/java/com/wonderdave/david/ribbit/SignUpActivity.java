@@ -1,9 +1,12 @@
 package com.wonderdave.david.ribbit;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -23,6 +26,30 @@ public class SignUpActivity extends Activity {
         mUsername = (EditText)findViewById(R.id.userNameField2);
         mPassword = (EditText)findViewById(R.id.passwordField2);
         mEmail = (EditText)findViewById(R.id.emailField);
+        mSignUpButton = (Button)findViewById(R.id.submitButton);
+        mSignUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String username = mUsername.getText().toString();
+                String password = mPassword.getText().toString();
+                String email = mEmail.getText().toString();
+
+                username = username.trim();
+                password = password.trim();
+                email = email.trim();
+
+                if (username.isEmpty() || password.isEmpty() || email.isEmpty()){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
+                    builder.setMessage(R.string.signup_error_message)
+                        .setTitle(R.string.signup_error_title)
+                        .setPositiveButton(android.R.string.ok, null);
+                }
+                else {
+                    //create the new user
+                }
+
+            }
+        });
     }
 
 
