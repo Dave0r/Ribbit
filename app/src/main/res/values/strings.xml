@@ -12,7 +12,7 @@
     <string name="Login_button">Login</string>
     <string name="signUpLabel">Sign Up</string>
     <string name="submitButton">Submit</string>
-    <string name="action_settings">Settings</string>
+    <string name="Logout_menu">Logout</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="signup_error_message">Please make sure all fields are filled in</string>
