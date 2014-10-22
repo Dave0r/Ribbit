@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wonderdave.david.ribbit.ForgottenActivity" >
+    <item android:id="@+id/action_Logout"
+        android:title="@string/Logout_menu"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

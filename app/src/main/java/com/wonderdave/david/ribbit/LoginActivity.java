@@ -21,6 +21,7 @@ import com.parse.SignUpCallback;
 public class LoginActivity extends Activity {
 
     protected TextView mSignUpTextView;
+    protected TextView mForgottenPassword;
     protected EditText mUsername;
     protected EditText mPassword;
     protected Button mloginButton;
@@ -36,6 +37,14 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+        mForgottenPassword = (TextView)findViewById(R.id.ForgotText);
+        mForgottenPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, ForgottenActivity.class);
                 startActivity(intent);
             }
         });
