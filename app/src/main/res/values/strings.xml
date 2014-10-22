@@ -17,5 +17,7 @@
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="signup_error_message">Please make sure all fields are filled in</string>
     <string name="signup_error_title">Oi! Dickhead!</string>
+    <string name="login_error_message">Are you thick? Enter your details!!!</string>
+    <string name="login_error_title">Oi! Dickhead!</string>
 
 </resources>
